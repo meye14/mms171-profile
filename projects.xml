@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<projects>
+
+    <project>
+        <title>Sol at Luna: Music Cover</title>
+        <description>
+            A personal music cover project where I explored vocal performance,
+            recording, and audio production as a form of creative expression.
+        </description>
+        <date>August 30, 2026</date>
+    </project>
+
+    <project>
+        <title>From Scroll to Story</title>
+        <description>
+            A short-form UGC-style video editing project that combines product-focused
+            footage, music, pacing, text, and visual storytelling for social media.
+        </description>
+        <date>October 9, 2026</date>
+    </project>
+
+    <project>
+        <title>Fresh in Frame</title>
+        <description>
+            A static visual design project created for a fresh produce campaign,
+            using photography, typography, spacing, and visual hierarchy to present
+            the subject in a clear and engaging way.
+        </description>
+        <date>August 3, 2026</date>
+    </project>
+
+</projects>

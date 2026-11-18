@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&family=Poppins:wght@400;500;600&display=swap");
+
+
+/* General page style */
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #edf3f8;
+    color: #25313a;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3 {
+    font-family: "Kurale", Georgia, serif;
+    color: #35556f;
+}
+
+h1 {
+    font-size: 2.6rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.6rem;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(to right, #dfeaf2, #f3f7fa);
+    padding: 2.2rem;
+    margin-bottom: 1.7rem;
+    border: 0.1rem solid #b8cbd8;
+    border-left: 0.4rem solid #a84b55;
+}
+
+
+/* Main sections */
+
+section {
+    background-color: #ffffff;
+    padding: 1.8rem;
+    margin-bottom: 1.7rem;
+    border: 0.1rem solid #c8d6df;
+}
+
+
+/* About Me */
+
+.about-container {
+    display: flex;
+    gap: 2.2rem;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.profile-photo {
+    width: 13rem;
+    height: 13rem;
+    object-fit: cover;
+    border: 0.18rem solid #9eb5c4;
+}
+
+
+/* Things I Love */
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline-block;
+    background-color: #eef4f8;
+    border: 0.1rem solid #c4d3dd;
+    padding: 0.55rem 0.9rem;
+    margin: 0.3rem 0.4rem 0.3rem 0;
+}
+
+
+/* Passion Projects */
+
+section:nth-of-type(3) {
+    background-color: #f7f9fb;
+    border-color: #b8cbd8;
+}
+
+.project {
+    padding: 1.8rem 0;
+    border-bottom: 0.1rem solid #c8d6df;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+
+/* Audio */
+
+audio {
+    display: block;
+    width: 80%;
+    max-width: 42rem;
+    margin: 1.5rem auto 0;
+}
+
+
+/* Project video */
+
+.project-video {
+    display: block;
+    width: 55%;
+    max-width: 28rem;
+    margin: 1.5rem auto 0;
+}
+
+
+/* Project image */
+
+.project-image {
+    display: block;
+    width: 55%;
+    max-width: 28rem;
+    height: auto;
+    margin: 1.5rem auto 0;
+    border: 0.1rem solid #c8d6df;
+}
+
+
+/* Links */
+
+a {
+    color: #8d3f49;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #dfeaf2;
+    padding: 1.6rem;
+    margin-top: 1.7rem;
+    border: 0.1rem solid #b8cbd8;
+    border-left: 0.3rem solid #a84b55;
+}
+
+
+/* Small screens */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    .project-video,
+    .project-image {
+        width: 85%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
