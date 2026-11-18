@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merielle Yel Abella's multimedia profile and passion projects.">
     <title>Merielle Abella - My Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,28 +12,46 @@
 <body>
 
     <header>
-        <h1>Merielle "Yel" Paredes Abella</h1>
-        <p>Everything works out. Keep creating, keep learning, and keep moving forward.</p>
+        <div class="hero-content">
+            <p class="eyebrow">Multimedia Student & Creative</p>
+
+            <h1>Merielle "Yel" Paredes Abella</h1>
+
+            <p class="tagline">
+                Everything works out. Keep creating, keep learning, and keep moving forward.
+            </p>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#about">About Me</a>
+                <a href="#interests">Things I Love</a>
+                <a href="#projects">Passion Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
+
 
     <main>
 
-        <section>
+        <!-- About Me -->
+        <section id="about">
             <h2>About Me</h2>
 
             <div class="about-container">
 
-                <img class="profile-photo"
-                     src="profile-photo.png"
-                     alt="Photo of Merielle Abella">
+                <img
+                    class="profile-photo"
+                    src="profile-photo.png"
+                    alt="Photo of Merielle Abella"
+                >
 
                 <div class="about-text">
 
                     <p>
                         Hi! I'm Yel, a fourth-year BA Multimedia Studies student who has loved
                         multimedia since I was young, particularly video and visual storytelling.
-                        I currently work in marketing, where I am able to apply my creativity
-                        and multimedia skills to real projects.
+                        I currently work in marketing, where I am able to apply my creativity and
+                        multimedia skills to real projects.
                     </p>
 
                     <p>
@@ -42,14 +62,15 @@
                     </p>
 
                 </div>
-
             </div>
         </section>
 
-        <section>
+
+        <!-- Things I Love -->
+        <section id="interests">
             <h2>Things I Love</h2>
 
-            <ul>
+            <ul class="interest-list">
                 <li>Games</li>
                 <li>Movies</li>
                 <li>Creating music and art</li>
@@ -57,70 +78,134 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Passion Projects</h2>
 
-            <div class="project">
-                <h3>Sol at Luna: Music Cover</h3>
+        <!-- Passion Projects -->
+        <section id="projects" class="projects-section">
 
-                <p>
-                    A personal music cover project where I explored vocal performance,
-                    recording, and audio production as a form of creative expression.
-                </p>
-
-                <p><strong>Date:</strong> August 30, 2026</p>
-
-                <audio controls>
-                    <source src="sol-at-luna-geiko-cover.wav" type="audio/wav">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <div class="project">
-                <h3>From Scroll to Story</h3>
+            <div class="section-intro">
+                <h2>Passion Projects</h2>
 
                 <p>
-                    A short-form UGC-style video editing project that combines product-focused
-                    footage, music, pacing, text, and visual storytelling for social media.
+                    A collection of creative work across music, video editing, and visual design.
                 </p>
-
-                <p><strong>Date:</strong> October 9, 2026</p>
-
-                <video controls class="project-video">
-                    <source src="from-scroll-to-story.mp4" type="video/mp4">
-                    Your browser does not support the video element.
-                </video>
             </div>
 
-            <div class="project">
-                <h3>Fresh in Frame</h3>
 
-                <p>
-                    A static visual design project created for a fresh produce campaign,
-                    using photography, typography, spacing, and visual hierarchy to present
-                    the subject in a clear and engaging way.
-                </p>
+            <!-- Project 1 -->
+            <article class="project">
 
-                <p><strong>Date:</strong> August 3, 2026</p>
+                <div class="project-number">01</div>
 
-                <img class="project-image"
-                     src="fresh-in-frame.jpg"
-                     alt="Fresh in Frame visual design project">
-            </div>
+                <div class="project-content">
+                    <h3>Sol at Luna: Music Cover</h3>
+
+                    <p>
+                        A personal music cover project where I explored vocal performance,
+                        recording, and audio production as a form of creative expression.
+                    </p>
+
+                    <p class="project-date">
+                        <strong>Date:</strong> August 30, 2026
+                    </p>
+
+                    <audio controls>
+                        <source
+                            src="sol-at-luna-geiko-cover.mp3"
+                            type="audio/mpeg"
+                        >
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article class="project">
+
+                <div class="project-number">02</div>
+
+                <div class="project-content">
+                    <h3>From Scroll to Story</h3>
+
+                    <p>
+                        A short-form UGC-style video editing project that combines
+                        product-focused footage, music, pacing, text, and visual storytelling
+                        for social media.
+                    </p>
+
+                    <p class="project-date">
+                        <strong>Date:</strong> October 9, 2026
+                    </p>
+
+                    <video
+                        controls
+                        class="project-video"
+                        preload="metadata"
+                    >
+                        <source
+                            src="from-scroll-to-story.mp4"
+                            type="video/mp4"
+                        >
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+            <article class="project">
+
+                <div class="project-number">03</div>
+
+                <div class="project-content">
+                    <h3>Fresh in Frame</h3>
+
+                    <p>
+                        A static visual design project created for a fresh produce campaign,
+                        using photography, typography, spacing, and visual hierarchy to present
+                        the subject in a clear and engaging way.
+                    </p>
+
+                    <p class="project-date">
+                        <strong>Date:</strong> August 3, 2026
+                    </p>
+
+                    <img
+                        class="project-image"
+                        src="fresh-in-frame.jpg"
+                        alt="Fresh in Frame visual design project"
+                    >
+                </div>
+
+            </article>
 
         </section>
 
     </main>
 
-    <footer>
-        <h2>Contact</h2>
 
-        <p>
-            You can reach me through email at
-            <a href="mailto:mpabella1@up.edu.ph">mpabella1@up.edu.ph</a>.
-        </p>
+    <footer id="contact">
+
+        <div class="footer-content">
+            <p class="footer-label">Let’s connect</p>
+
+            <h2>Contact</h2>
+
+            <p>
+                You can reach me through email at
+                <a href="mailto:mpabella1@up.edu.ph">
+                    mpabella1@up.edu.ph
+                </a>.
+            </p>
+
+            <a class="back-to-top" href="#">
+                Back to top ↑
+            </a>
+        </div>
+
     </footer>
 
 </body>
-
 </html>
